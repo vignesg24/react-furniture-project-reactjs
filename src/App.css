@@ -1,0 +1,365 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+img{
+  max-width: 100%;
+}
+nav{
+  display: flex;
+  padding:40px 100px;
+  justify-content: space-between;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+.li{
+  display: inline-block;
+  padding: 23px;
+  font-size: 20px;
+  border-radius: 50%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.li:hover{
+  background-color: crimson;
+  color: white;
+}
+.picture{
+  padding:50px 100px ;
+  background-color: rgb(44, 40, 40);
+}
+.picture img{
+  width: 100%;
+}
+.box{
+  display: flex;
+  padding: 30px  100px;
+  justify-content: space-between;
+  background-color: rgb(44, 40, 40);
+}
+.word1{
+  width: 30%;
+  color: white;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1:first-letter{
+  color: red;
+}
+.word2{
+  width: 70%;
+  color: rgb(150, 143, 143);
+  text-align: justify;
+  padding: 0 0 0 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+span{
+  color: red;
+}
+.box1{
+  display: flex;
+  padding: 40px 100px;
+  background-color: black;
+  color:white ;
+}
+.section1, .section2{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.section2{
+  padding: 0 0 0 20px;
+}
+.section1{
+  padding: 0 20px 0 0;
+}
+h3{
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px 20px 20px 0;
+}
+.photo, .photo1,.photo2, .photo3{
+  width: 100%;
+  height: 20vh;
+  background-size: cover;
+}
+.photo{
+  background-image: url('../public/image/picture1.jpg');
+}
+.photo1{
+  background-image: url('../public/image/picture2.jpeg');
+}
+.photo2{
+  background-image: url('../public/image/obitorin.jpeg');
+}
+.photo3{
+  background-image: url('../public/image/nav3.jpeg');
+}
+h4{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+}
+.box1 p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:rgb(150, 143, 143) ;
+}
+button{
+  padding: 7px;
+  background-color: brown;
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  margin-top: 20px;
+}
+button:hover{
+  background-color: white;
+  color: black;
+}
+.box-side{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(44, 40, 40);
+  padding: 0px 100px 60px 100px;
+  justify-content:space-between ;
+}
+.left-side, .right-side{
+  width: 50%;
+}
+.left-side{
+  display: flex;
+  flex-direction: column;
+}
+.side{
+  display: flex;
+}
+.pic{
+  width: 50%;
+}
+.pra{
+  width: 40%;
+}
+.pic{
+  background-image: url('../public/image/img3.jpeg');
+  background-size: cover;
+  margin-right: 10px;
+  background-position: center;
+}
+#pra{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0 10px 0 10px;
+}
+.pra p{
+  color:rgb(170, 163, 163) ;
+  padding: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 23px;
+}
+.name{
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  line-height: 20px;
+}
+.name div{
+  color: rgb(224, 71, 71);
+  padding: 7px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2{
+  padding:15px 0;
+  background-color: rgb(44, 40, 40);
+  font-size: 25px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.right-side{
+  display: flex;
+  flex-direction: column;
+}
+.main2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 50px;
+}
+.foot1{
+  color: black;
+  font-size: 18px;
+}
+footer{
+  padding: 40px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 22px;
+  color: brown;
+}
+@media (max-width:1270px){
+  .section1, .section2{
+      justify-content: space-between;
+  }
+  .sec1, .sec2, .sec3, .sec4{
+      width: 80%;
+  }
+  .photo, .photo1,.photo2, .photo3{
+      width: 80%;
+  }
+}
+@media (max-width:1000px){
+  .section1, .section2{
+      flex-direction: column;
+  }
+  .sec1, .sec2, .sec3, .sec4{
+      width: 100%;
+  }
+  .photo, .photo1,.photo2, .photo3{
+      width: 100%;
+  }
+  .box-side{
+      flex-direction: column;
+  }
+  .left-side, .right-side{
+      width: 100%;
+  }
+}
+@media (max-width:997px){
+  .photo, .photo1,.photo2, .photo3{
+      height: 50vh;
+      background-size: cover;
+      background-position: center;
+  }
+}
+@media (max-width:940px){
+  nav{
+      padding: 30px 40px;
+  }
+  .picture{
+      padding: 40px 40px;
+  }
+  .box{
+      padding: 30px 40px;
+  }
+  .box1{
+      padding: 30px 40px;
+  }
+  .box-side{
+      padding: 20px 40px;
+  }
+  footer{
+      padding: 20px 40px;
+  }
+}
+@media (max-width:823px){
+  nav{
+      padding: 10px 40px;
+  }
+  .logo{
+      margin-top: 10px;
+      width: 20%;
+      align-items: center;
+  }
+  .list{
+      width: 80%;
+  }
+  .li{
+      padding: 15px;
+  }
+  .box{
+      flex-direction: column;
+  }
+  .word2{
+      width: 100%;
+  }
+}
+@media (max-width:625px){
+  .box1{
+      flex-direction: column;
+  }
+  .sec1, .sec2, .sec3, .sec4{
+      width: 100%;
+  }
+  .section1 , .section2{
+      width: 100%;
+      padding: 0;
+  }
+  .photo, .photo1,.photo2, .photo3{
+      height: 50vh;
+  }
+}
+@media (max-width:605px){
+  .li{
+      font-size: 15px;
+  }
+}
+@media (max-width:529px){
+  .li{
+      padding:10px;
+  }
+  .main2{
+      grid-template-columns: 1fr 1fr;
+  }
+  .side{
+      flex-direction: column;
+  }
+  .pic, .pra{
+      width: 100%;
+  }
+  .pic{
+      width: 100%;
+      height: 50vh;
+  }
+}
+@media (max-width:463px){
+  nav{
+      padding: 30px 20px;
+  }
+  .picture{
+      padding: 40px 20px;
+  }
+  .box{
+      padding: 30px 20px;
+  }
+  .box1{
+      padding: 30px 20px;
+  }
+  .box-side{
+      padding: 20px 20px;
+  }
+  footer{
+      padding: 20px 20px;
+  }
+  footer,.foot1{
+      font-size: 16px;
+  }
+}
+@media (max-width:423px){
+  .logo{
+      width: 25%;
+  }
+  .list{
+      width: 75%;
+      margin-left: 30px;
+      margin-top: 6px;
+  }
+  .li{
+      padding: 5px;
+  }
+}
+@media (max-width:413px){
+  nav{
+      padding: 5px;
+  }
+  .list{
+      margin-left: 20px;
+  }   
+}
+@media (max-width:405px){
+  .list{
+      margin-left: 10px;
+  }
+}
+@media (max-width:393px){
+  .li{
+      font-size: 13px;
+  }
+}
