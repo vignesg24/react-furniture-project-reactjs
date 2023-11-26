@@ -23,7 +23,7 @@ function App() {
     <div className="box">
         <div className="word1"><h1>Welcome!</h1></div><hr/>
         <div className="word2">
-            <p><span>Click here</span> for more info about free website template created by TemplateMonster.com This is a Boostrap that goes with several
+            <p><span>vignesh</span> for more info about free website template created by TemplateMonster.com This is a Boostrap that goes with several
                 layout options (for desktop, tablet, smartphone landscape and portrait) to fit all popular screen resolutions. the PSD
                 source files of this template are available for free the registered members of TemplateMonster.com Feel free to get them!
             </p>
